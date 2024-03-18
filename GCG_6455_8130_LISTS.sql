@@ -1,0 +1,15 @@
+-- Database: GLOBALPLA Metadata version: 2 Exported: Aug 12, 2021
+-- Begin Tables
+SET LEGACYTYPESALLOWED = ON;
+-- Begin Multi-Line Statement
+CREATE TABLE "GCG_6455_8130_LISTS" USING 'GCG_6455_8130_LISTS.mkd' PAGESIZE=4096 (
+ "LIST_ID" CHAR(4),
+ "FIELD" CHAR(4),
+ "PART" CHAR(20),
+ "VALUE_01" CHAR(50),
+ "VALUE_02" CHAR(50),
+ "VALUE_03" CHAR(50),
+ "VALUE_04" CHAR(50) );
+-- End Multi-Line Statement
+SET LEGACYTYPESALLOWED = OFF;
+-- End Tables
