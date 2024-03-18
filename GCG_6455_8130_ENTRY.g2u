@@ -1,0 +1,1644 @@
+Program.Sub.ScreenSU.Start
+Gui.8130Entry..Create
+Gui.8130Entry..Caption("8130 Entry")
+Gui.8130Entry..Size(12420,10440)
+Gui.8130Entry..MinX(0)
+Gui.8130Entry..MinY(0)
+Gui.8130Entry..Position(0,0)
+Gui.8130Entry..BackColor(-2147483633)
+Gui.8130Entry..MaxButton(False)
+Gui.8130Entry..MousePointer(0)
+Gui.8130Entry..Sizeable(False)
+Gui.8130Entry..Event(UnLoad,8130Entry_UnLoad)
+Gui.8130Entry.lbl2.Create(Label,"2.",True,270,255,0,2325,525,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl3.Create(Label,"3.  Form Tracking Number:",True,2055,255,0,9765,525,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl4.Create(Label,"4.  Organization Name and Address:",True,3435,255,0,180,1380,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl6.Create(Label,"6.  Item:",True,1215,255,0,180,2565,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl7.Create(Label,"7.  Description:",True,1245,255,0,1710,2565,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl8.Create(Label,"8.  Part Number:",True,1305,255,0,4425,2565,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt1.Create(TextBox,"",True,1995,300,0,195,975,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt1.TabStop(True)
+Gui.8130Entry.txt1.TabIndex(7)
+Gui.8130Entry.txt1.MaxLength(30)
+Gui.8130Entry.txt2.Create(TextBox,"",True,7245,300,0,2340,975,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt2.TabStop(True)
+Gui.8130Entry.txt2.TabIndex(8)
+Gui.8130Entry.txt2.MaxLength(50)
+Gui.8130Entry.txt4a.Create(TextBox,"",True,9405,300,0,195,1800,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt4a.TabStop(True)
+Gui.8130Entry.txt4a.TabIndex(11)
+Gui.8130Entry.lbl9.Create(Label,"9.  Quantity:",True,1230,255,0,7065,2565,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt6.Create(TextBox,"1",True,1215,300,0,195,2850,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt6.TabStop(True)
+Gui.8130Entry.txt6.TabIndex(15)
+Gui.8130Entry.txt7.Create(TextBox,"",True,2460,300,0,1680,2850,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt7.TabStop(True)
+Gui.8130Entry.txt7.TabIndex(16)
+Gui.8130Entry.txt7.MaxLength(30)
+Gui.8130Entry.txt8.Create(TextBox,"",True,1920,300,0,4440,2850,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt8.Event(LostFocus,txt8_LostFocus)
+Gui.8130Entry.txt8.TabStop(True)
+Gui.8130Entry.txt8.TabIndex(17)
+Gui.8130Entry.txt8.MaxLength(20)
+Gui.8130Entry.txt3.Create(TextBox,"",True,1215,300,0,10170,930,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt3.Event(LostFocus,txt3_LostFocus)
+Gui.8130Entry.txt3.TabStop(True)
+Gui.8130Entry.txt3.TabIndex(9)
+Gui.8130Entry.txt3.Locked(True)
+Gui.8130Entry.txt3.MaxLength(10)
+Gui.8130Entry.cmdPartBrowse.Create(Button)
+Gui.8130Entry.cmdPartBrowse.Size(390,375)
+Gui.8130Entry.cmdPartBrowse.Position(6435,2805)
+Gui.8130Entry.cmdPartBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdPartBrowse.Event(Click,cmdPartBrowse_Click)
+Gui.8130Entry.cmdPartBrowse.TabStop(True)
+Gui.8130Entry.cmdPartBrowse.TabIndex(18)
+Gui.8130Entry.cmdFormBrowse.Create(Button)
+Gui.8130Entry.cmdFormBrowse.Size(390,375)
+Gui.8130Entry.cmdFormBrowse.Position(9135,60)
+Gui.8130Entry.cmdFormBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdFormBrowse.Event(Click,cmdFormBrowse_Click)
+Gui.8130Entry.cmdFormBrowse.TabStop(True)
+Gui.8130Entry.cmdFormBrowse.TabIndex(4)
+Gui.8130Entry.txt5.Create(TextBox,"",True,1215,300,0,10170,1800,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt5.Event(LostFocus,txt5_LostFocus)
+Gui.8130Entry.txt5.TabStop(True)
+Gui.8130Entry.txt5.TabIndex(13)
+Gui.8130Entry.txt5.Locked(True)
+Gui.8130Entry.txt5.MaxLength(7)
+Gui.8130Entry.cmdJobBrowse.Create(Button)
+Gui.8130Entry.cmdJobBrowse.Size(390,375)
+Gui.8130Entry.cmdJobBrowse.Position(11490,900)
+Gui.8130Entry.cmdJobBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdJobBrowse.Event(Click,cmdJobBrowse_Click)
+Gui.8130Entry.cmdJobBrowse.TabStop(True)
+Gui.8130Entry.cmdJobBrowse.TabIndex(10)
+Gui.8130Entry.txt9.Create(TextBox,"",True,1215,300,0,7065,2850,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt9.TabStop(True)
+Gui.8130Entry.txt9.TabIndex(19)
+Gui.8130Entry.txt9.NumericOnly(1)
+Gui.8130Entry.ddl11.Create(DropDownList)
+Gui.8130Entry.ddl11.Size(1545,330)
+Gui.8130Entry.ddl11.Position(10740,2835)
+Gui.8130Entry.ddl11.TabStop(True)
+Gui.8130Entry.ddl11.TabIndex(22)
+Gui.8130Entry.lbl11.Create(Label,"11.  Status/Work:",True,1350,255,0,10725,2565,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt4b.Create(TextBox,"",True,9405,300,0,195,2145,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt4b.TabStop(True)
+Gui.8130Entry.txt4b.TabIndex(12)
+Gui.8130Entry.lbl12.Create(Label,"12. Remarks:",True,1935,255,0,195,3285,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt12a.Create(TextboxM)
+Gui.8130Entry.txt12a.Size(3900,1605)
+Gui.8130Entry.txt12a.Position(270,3645)
+Gui.8130Entry.txt12a.TabStop(True)
+Gui.8130Entry.txt12a.TabIndex(27)
+Gui.8130Entry.txt12b.Create(TextboxM)
+Gui.8130Entry.txt12b.Size(3900,1605)
+Gui.8130Entry.txt12b.Position(4335,3645)
+Gui.8130Entry.txt12b.TabStop(True)
+Gui.8130Entry.txt12b.TabIndex(28)
+Gui.8130Entry.txt12c.Create(TextboxM)
+Gui.8130Entry.txt12c.Size(3900,1605)
+Gui.8130Entry.txt12c.Position(8400,3645)
+Gui.8130Entry.txt12c.TabStop(True)
+Gui.8130Entry.txt12c.TabIndex(29)
+Gui.8130Entry.lbl13a.Create(Label,"13a.  Certifies the items identified above were manufactured in conformity to:",True,5760,255,0,195,6945,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14a1.Create(Label,"14a.",True,435,255,0,6210,6915,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl13b.Create(Label,"13b.  Authorized Signature:",True,2460,255,0,195,8160,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl13c.Create(Label,"13c.  Approval/Authorization No.:",True,2550,255,0,3630,8160,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl13d.Create(Label,"13d.  Name (Typed or Printed):",True,2445,255,0,195,8880,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl13e.Create(Label,"13e.  Date (dd/mmm/yyyy):",True,2055,255,0,3630,8880,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14b.Create(Label,"14b.  Authorized Signature:",True,2115,255,0,6210,8160,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14d.Create(Label,"14d.  Name (Typed or Printed):",True,2340,255,0,6210,8880,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14e.Create(Label,"14e.  Date (dd/mmm/yyyy):",True,2100,255,0,10095,8880,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.chk13a1.Create(CheckBox)
+Gui.8130Entry.chk13a1.Size(5535,360)
+Gui.8130Entry.chk13a1.Position(195,7155)
+Gui.8130Entry.chk13a1.Caption("Approved design data and are in a condition for safe operation. ")
+Gui.8130Entry.chk13a1.TabStop(True)
+Gui.8130Entry.chk13a1.TabIndex(40)
+Gui.8130Entry.chk13a2.Create(CheckBox)
+Gui.8130Entry.chk13a2.Size(5970,360)
+Gui.8130Entry.chk13a2.Position(195,7530)
+Gui.8130Entry.chk13a2.Caption("Non-approved design data specified in Block 12. ")
+Gui.8130Entry.chk13a2.TabStop(True)
+Gui.8130Entry.chk13a2.TabIndex(41)
+Gui.8130Entry.txt13b.Create(TextBox,"",True,3300,330,0,195,8430,False,0,"Lucida Calligraphy",8,-2147483643,1)
+Gui.8130Entry.txt13c.Create(TextBox,"",True,2325,300,0,3705,8430,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt13c.TabStop(True)
+Gui.8130Entry.txt13c.TabIndex(42)
+Gui.8130Entry.lbl14c.Create(Label,"14c.  Approval/Certificate No.:",True,2310,255,0,10095,8160,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt14b.Create(TextBox,"",True,3750,330,0,6210,8430,False,0,"Lucida Calligraphy",8,-2147483643,1)
+Gui.8130Entry.txt14c.Create(TextBox,"",True,2130,300,0,10095,8430,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt14c.TabStop(True)
+Gui.8130Entry.txt14c.TabIndex(46)
+Gui.8130Entry.txt13d.Create(TextBox,"",True,3300,300,0,195,9105,False,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt14d.Create(TextBox,"",True,3750,300,0,6210,9105,False,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.dtp13e.Create(DatePicker)
+Gui.8130Entry.dtp13e.Size(1935,285)
+Gui.8130Entry.dtp13e.Position(3705,9105)
+Gui.8130Entry.dtp13e.DefaultValue("")
+Gui.8130Entry.dtp13e.Enabled(False)
+Gui.8130Entry.dtp14e.Create(DatePicker)
+Gui.8130Entry.dtp14e.Size(1935,285)
+Gui.8130Entry.dtp14e.Position(10095,9105)
+Gui.8130Entry.dtp14e.DefaultValue("")
+Gui.8130Entry.dtp14e.Enabled(False)
+Gui.8130Entry.lblTitle.Create(Label,"AUTHORIZED RELEASE CERTIFICATE",True,4620,435,0,3795,465,True,0,"Arial",12,-2147483633,0)
+Gui.8130Entry.lblTitle.FontStyle(True,False,False,False,False)
+Gui.8130Entry.chk14a1.Create(CheckBox)
+Gui.8130Entry.chk14a1.Size(2610,360)
+Gui.8130Entry.chk14a1.Position(6615,6825)
+Gui.8130Entry.chk14a1.Caption("14 CFR 43.9 Return to Service")
+Gui.8130Entry.chk14a1.TabStop(True)
+Gui.8130Entry.chk14a1.TabIndex(44)
+Gui.8130Entry.chk14a2.Create(CheckBox)
+Gui.8130Entry.chk14a2.Size(3105,360)
+Gui.8130Entry.chk14a2.Position(9300,6825)
+Gui.8130Entry.chk14a2.Caption("Other regulation specified in Block 12")
+Gui.8130Entry.chk14a2.TabStop(True)
+Gui.8130Entry.chk14a2.TabIndex(45)
+Gui.8130Entry.lbl10.Create(Label,"10.  Serial Number:",True,1635,255,0,8520,2565,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt10.Create(TextBox,"",True,1515,300,0,8520,2850,True,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt10.TabStop(True)
+Gui.8130Entry.txt10.TabIndex(20)
+Gui.8130Entry.txt10.MaxLength(30)
+Gui.8130Entry.cmdSerialBrowse.Create(Button)
+Gui.8130Entry.cmdSerialBrowse.Size(390,375)
+Gui.8130Entry.cmdSerialBrowse.Position(10125,2805)
+Gui.8130Entry.cmdSerialBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdSerialBrowse.Event(Click,cmdSerialBrowse_Click)
+Gui.8130Entry.cmdSerialBrowse.TabStop(True)
+Gui.8130Entry.cmdSerialBrowse.TabIndex(21)
+Gui.8130Entry.cmdSave.Create(Button)
+Gui.8130Entry.cmdSave.Size(855,375)
+Gui.8130Entry.cmdSave.Position(11400,9585)
+Gui.8130Entry.cmdSave.Caption("Save")
+Gui.8130Entry.cmdSave.FontStyle(True,False,False,False,False)
+Gui.8130Entry.cmdSave.Event(Click,cmdSave_Click)
+Gui.8130Entry.cmdSave.TabStop(True)
+Gui.8130Entry.cmdSave.TabIndex(50)
+Gui.8130Entry.cmdClear.Create(Button)
+Gui.8130Entry.cmdClear.Size(855,375)
+Gui.8130Entry.cmdClear.Position(10455,9585)
+Gui.8130Entry.cmdClear.Caption("Clear")
+Gui.8130Entry.cmdClear.FontStyle(True,False,False,False,False)
+Gui.8130Entry.cmdClear.Event(Click,cmdClear_Click)
+Gui.8130Entry.cmdClear.TabStop(True)
+Gui.8130Entry.cmdClear.TabIndex(49)
+Gui.8130Entry.lblCustomer.Create(Label,"Customer:",True,885,255,0,180,180,True,2,"Arial",8,-2147483633,0)
+Gui.8130Entry.txtCustID.Create(TextBox,"",True,1215,300,0,1080,90,False,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txtCustID.Event(LostFocus,txtCustID_LostFocus)
+Gui.8130Entry.txtCustID.TabStop(True)
+Gui.8130Entry.txtCustID.TabIndex(1)
+Gui.8130Entry.txtCustID.MaxLength(6)
+Gui.8130Entry.txtCustName.Create(TextBox,"",True,3510,300,0,2385,90,False,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txtCustName.Locked(True)
+Gui.8130Entry.cmdCustBrowse.Create(Button)
+Gui.8130Entry.cmdCustBrowse.Size(390,375)
+Gui.8130Entry.cmdCustBrowse.Position(5970,60)
+Gui.8130Entry.cmdCustBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdCustBrowse.Event(Click,cmdCustBrowse_Click)
+Gui.8130Entry.cmdCustBrowse.TabStop(True)
+Gui.8130Entry.cmdCustBrowse.TabIndex(2)
+Gui.8130Entry.txtFormID.Create(TextBox,"",True,1785,300,0,7290,90,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txtFormID.TabStop(True)
+Gui.8130Entry.txtFormID.TabIndex(3)
+Gui.8130Entry.txtFormID.MaxLength(26)
+Gui.8130Entry.txtFormID.Event(LostFocus,txtFormID_LostFocus)
+Gui.8130Entry.cmdNewID.Create(Button)
+Gui.8130Entry.cmdNewID.Size(615,375)
+Gui.8130Entry.cmdNewID.Position(8925,465)
+Gui.8130Entry.cmdNewID.Caption("New")
+Gui.8130Entry.cmdNewID.FontStyle(True,False,False,False,False)
+Gui.8130Entry.cmdNewID.Event(Click,cmdNewID_Click)
+Gui.8130Entry.cmdNewID.Enabled(False)
+Gui.8130Entry.cmdNewID.Visible(False)
+Gui.8130Entry.cmdSign13b.Create(Button)
+Gui.8130Entry.cmdSign13b.Size(855,375)
+Gui.8130Entry.cmdSign13b.Position(195,9585)
+Gui.8130Entry.cmdSign13b.Caption("Sign")
+Gui.8130Entry.cmdSign13b.FontStyle(True,False,False,False,False)
+Gui.8130Entry.cmdSign13b.Event(Click,cmdSign13b_Click)
+Gui.8130Entry.cmdSign13b.TabStop(True)
+Gui.8130Entry.cmdSign13b.TabIndex(43)
+Gui.8130Entry.cmdSign14b.Create(Button)
+Gui.8130Entry.cmdSign14b.Size(855,375)
+Gui.8130Entry.cmdSign14b.Position(6255,9585)
+Gui.8130Entry.cmdSign14b.Caption("Sign")
+Gui.8130Entry.cmdSign14b.Event(Click,cmdSign14b_Click)
+Gui.8130Entry.cmdSign14b.FontStyle(True,False,False,False,False)
+Gui.8130Entry.cmdSign14b.TabStop(True)
+Gui.8130Entry.cmdSign14b.TabIndex(47)
+Gui.8130Entry.cmdPOBrowse.Create(Button)
+Gui.8130Entry.cmdPOBrowse.Size(390,375)
+Gui.8130Entry.cmdPOBrowse.Position(11490,1770)
+Gui.8130Entry.cmdPOBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdPOBrowse.Event(Click,cmdPOBrowse_Click)
+Gui.8130Entry.cmdPOBrowse.TabStop(True)
+Gui.8130Entry.cmdPOBrowse.TabIndex(14)
+Gui.8130Entry.lbl1i.Create(Label,"1.  Approving Civil Aviation",True,2070,255,0,210,525,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl1ii.Create(Label,"Authority/Country:",True,1455,255,0,645,780,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl5i.Create(Label,"5.  Work Order/Contract/Invoice",True,2445,255,0,9795,1380,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl5ii.Create(Label,"Number:",True,2445,255,0,9795,1605,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14i.Create(Label,"Certifies that unless otherwise specified in Block 12, the work identified in Block 11 ",True,6210,255,0,6180,7245,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14ii.Create(Label,"and described in Block 12 was accomplished in accordance with Title 14, Code of ",True,6210,255,0,6180,7455,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14iii.Create(Label,"Federal Regulations, part 43 and in respect to that work, the items are approved for ",True,6210,255,0,6180,7665,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl14iv.Create(Label,"return to service.",True,6210,255,0,6180,7875,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txtFormNo.Create(TextBox,"",True,1215,300,0,10470,90,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txtFormNo.TabStop(True)
+Gui.8130Entry.txtFormNo.TabIndex(5)
+Gui.8130Entry.txtFormNo.Event(LostFocus,txtFormNo_LostFocus)
+Gui.8130Entry.txtFormNo.MaxLength(6)
+Gui.8130Entry.lblFormID.Create(Label,"Form ID:",True,885,255,0,6420,180,True,2,"Arial",8,-2147483633,0)
+Gui.8130Entry.lblFormNo.Create(Label,"Form No:",True,825,255,0,9570,180,True,2,"Arial",8,-2147483633,0)
+Gui.8130Entry.cmdFormNoBrowse.Create(Button)
+Gui.8130Entry.cmdFormNoBrowse.Size(390,375)
+Gui.8130Entry.cmdFormNoBrowse.Position(11745,60)
+Gui.8130Entry.cmdFormNoBrowse.Caption("BROWSE")
+Gui.8130Entry.cmdFormNoBrowse.Event(Click,cmdFormNoBrowse_Click)
+Gui.8130Entry.cmdFormNoBrowse.TabStop(True)
+Gui.8130Entry.cmdFormNoBrowse.TabIndex(6)
+Gui.8130Entry.cmdPrint.Create(Button)
+Gui.8130Entry.cmdPrint.Size(855,375)
+Gui.8130Entry.cmdPrint.Position(9495,9585)
+Gui.8130Entry.cmdPrint.TabStop(True)
+Gui.8130Entry.cmdPrint.TabIndex(48)
+Gui.8130Entry.cmdPrint.Caption("Print")
+Gui.8130Entry.cmdPrint.Event(Click,cmdPrint_Click)
+Gui.8130Entry.cmdPrint.FontStyle(True,False,False,False,False)
+Gui.8130Entry.lbl12d.Create(Label,"Work accomplished per",True,1800,255,0,195,5745,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl12e.Create(Label,"S/B:",True,435,255,0,8955,5745,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt12h.Create(TextBox,"",True,645,300,0,9375,5670,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt12h.TabStop(True)
+Gui.8130Entry.txt12h.TabIndex(37)
+Gui.8130Entry.lbl12f.Create(Label,"Work Order:",True,1065,255,0,10080,5745,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt12i.Create(TextBox,"",True,1215,300,0,11085,5670,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt12i.TabStop(True)
+Gui.8130Entry.txt12i.TabIndex(38)
+Gui.8130Entry.lbl12g.Create(Label,"Work accomplished and/or supervised by:",True,3165,255,0,195,6105,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.txt12j.Create(TextBox,"",True,2700,300,0,3480,6030,True,0,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt12j.TabStop(True)
+Gui.8130Entry.txt12j.TabIndex(39)
+Gui.8130Entry.lbl12hi.Create(Label,"Certifies that the work specified in Block 11/12 was carried out in accordance with EASA Part 145 and in respect to that work the product/article is considered ready ",True,12435,255,0,195,6390,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl12hi2.Create(Label,"for release to service under EASA Part 145 approval no. EASA 145.4708.",True,12435,255,0,195,6645,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.cmd12Add.Create(Button)
+Gui.8130Entry.cmd12Add.Size(690,375)
+Gui.8130Entry.cmd12Add.Position(4875,3195)
+Gui.8130Entry.cmd12Add.Caption("Add")
+Gui.8130Entry.cmd12Add.FontStyle(True,False,False,False,False)
+Gui.8130Entry.cmd12Add.Event(Click,cmd12Add_Click)
+Gui.8130Entry.cmd12Add.TabStop(True)
+Gui.8130Entry.cmd12Add.TabIndex(26)
+Gui.8130Entry.cbo12R1.Create(ComboBox)
+Gui.8130Entry.cbo12R1.Size(1095,330)
+Gui.8130Entry.cbo12R1.Position(1290,3210)
+Gui.8130Entry.cbo12R1.Event(LostFocus,cbo12R1_LostFocus)
+Gui.8130Entry.cbo12R1.TabStop(True)
+Gui.8130Entry.cbo12R1.TabIndex(23)
+Gui.8130Entry.cbo12R2.Create(ComboBox)
+Gui.8130Entry.cbo12R2.Size(1095,330)
+Gui.8130Entry.cbo12R2.Position(2475,3210)
+Gui.8130Entry.cbo12R2.TabStop(True)
+Gui.8130Entry.cbo12R2.TabIndex(24)
+Gui.8130Entry.cbo12R3.Create(ComboBox)
+Gui.8130Entry.cbo12R3.Size(1095,330)
+Gui.8130Entry.cbo12R3.Position(3630,3210)
+Gui.8130Entry.cbo12R3.TabStop(True)
+Gui.8130Entry.cbo12R3.TabIndex(25)
+Gui.8130Entry.cbo12d.Create(ComboBox)
+Gui.8130Entry.cbo12d.Size(2910,330)
+Gui.8130Entry.cbo12d.Position(2130,5655)
+Gui.8130Entry.cbo12d.Event(LostFocus,cbo12d_LostFocus)
+Gui.8130Entry.cbo12d.TabStop(True)
+Gui.8130Entry.cbo12d.TabIndex(33)
+Gui.8130Entry.cbo12e.Create(ComboBox)
+Gui.8130Entry.cbo12e.Size(1095,330)
+Gui.8130Entry.cbo12e.Position(5085,5655)
+Gui.8130Entry.cbo12e.TabStop(True)
+Gui.8130Entry.cbo12e.TabIndex(34)
+Gui.8130Entry.cbo12f.Create(ComboBox)
+Gui.8130Entry.cbo12f.Size(1500,330)
+Gui.8130Entry.cbo12f.Position(6225,5655)
+Gui.8130Entry.cbo12f.TabStop(True)
+Gui.8130Entry.cbo12f.TabIndex(35)
+Gui.8130Entry.cbo12g.Create(ComboBox)
+Gui.8130Entry.cbo12g.Size(1095,330)
+Gui.8130Entry.cbo12g.Position(7770,5655)
+Gui.8130Entry.cbo12g.TabStop(True)
+Gui.8130Entry.cbo12g.TabIndex(36)
+Gui.8130Entry.chkCorrection.Create(CheckBox)
+Gui.8130Entry.chkCorrection.Size(2220,360)
+Gui.8130Entry.chkCorrection.Position(195,5280)
+Gui.8130Entry.chkCorrection.Caption("8130 Correction Notice")
+Gui.8130Entry.chkCorrection.Event(LostFocus,chkCorrection_LostFocus)
+Gui.8130Entry.chkCorrection.TabStop(True)
+Gui.8130Entry.chkCorrection.TabIndex(30)
+Gui.8130Entry.txt12CN1.Create(TextBox,"",False,555,300,0,2940,5310,False,2,"Arial",8,-2147483643,1)
+Gui.8130Entry.txt12CN1.TabStop(True)
+Gui.8130Entry.txt12CN1.TabIndex(31)
+Gui.8130Entry.lbl12CN1.Create(Label,"Block:",False,585,255,0,2340,5400,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.lbl12CN2.Create(Label,"Dated:",False,675,255,0,3600,5400,True,0,"Arial",8,-2147483633,0)
+Gui.8130Entry.dtp12CN.Create(DatePicker)
+Gui.8130Entry.dtp12CN.Size(1935,285)
+Gui.8130Entry.dtp12CN.Position(4260,5310)
+Gui.8130Entry.dtp12CN.Enabled(False)
+Gui.8130Entry.dtp12CN.Visible(False)
+Gui.8130Entry.dtp12CN.TabStop(True)
+Gui.8130Entry.dtp12CN.TabIndex(32)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+v.Global.sHookSQL.Declare
+v.Global.sHookVar.Declare
+v.Global.sSign.Declare
+v.Global.sTime.Declare
+v.Global.sLoc.Declare
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Created by: Robert Cole
+'Date: 8/3/2021
+
+f.Intrinsic.Control.CallSub(PopulateCheck)
+f.Intrinsic.Control.CallSub(SecurityCheck)
+
+gui.8130Entry.dtp13e.Value("1/1/1900")
+gui.8130Entry.dtp14e.Value("1/1/1900")
+
+f.Intrinsic.Control.CallSub(HookCheck)
+f.Intrinsic.Control.CallSub(LoadData)
+	
+f.Intrinsic.Control.If(v.Caller.Switches,<>,"O",and,v.Caller.Switches,<>,"N",v.Caller.Switches,<>,"710N0",v.Caller.Hook,<>,"50612")
+
+	f.Intrinsic.Control.CallSub(SetView)
+	
+f.Intrinsic.Control.EndIf
+
+gui.8130Entry..Visible(true)
+Program.Sub.Main.End
+
+Program.Sub.8130Entry_UnLoad.Start
+gui.8130Entry..Visible(false)
+
+f.Intrinsic.Control.End
+Program.Sub.8130Entry_UnLoad.End
+
+Program.Sub.LoadData.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sSplit.Declare
+
+f.Intrinsic.Control.CallSub(LoadList)
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormNo.Text,<>,"",or,v.Global.sHookVar,<>,"")
+
+	f.ODBC.Connection!conx.OpenCompanyConnection
+	
+	f.Intrinsic.Control.If(v.Global.sHookVar,<>,"")
+		f.Intrinsic.String.Build("select * from GCG_6455_8130_HIST where {0}",v.Global.sHookVar,v.Local.sSQL)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.String.Build("select * from GCG_6455_8130_HIST where FORM_NO = '{0}'",v.Screen.8130Entry!txtFormNo.Text,v.Local.sSQL)
+	f.Intrinsic.Control.EndIf	
+	
+	f.ODBC.Connection!conx.OpenLocalRecordsetRO("FORM",v.Local.sSQL)
+	
+	f.Intrinsic.Control.If(v.ODBC.conx!FORM.EOF,=,false)
+		
+		f.Intrinsic.Control.BlockEvents
+		
+		gui.8130Entry.txtCustID.Text(v.ODBC.conx!FORM.FieldVal!CUSTOMER)		
+		f.Intrinsic.Control.CallSub(txtCustID_LostFocus)
+		gui.8130Entry.txtFormID.Text(v.ODBC.conx!FORM.FieldVal!FORM_ID)
+		gui.8130Entry.txtFormNo.Text(v.ODBC.conx!FORM.FieldValTrim!FORM_NO)
+		gui.8130Entry.txt1.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_01)
+		gui.8130Entry.txt2.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_02)
+		gui.8130Entry.txt3.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_03)
+		gui.8130Entry.txt4a.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_04A)
+		gui.8130Entry.txt4b.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_04B)
+		gui.8130Entry.txt5.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_05)
+		gui.8130Entry.txt6.Text(v.ODBC.conx!FORM.FieldVal!FIELD_06)
+		gui.8130Entry.txt7.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_07)
+		gui.8130Entry.txt8.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_08)
+		gui.8130Entry.txt9.Text(v.ODBC.conx!FORM.FieldVal!FIELD_09)
+		gui.8130Entry.txt10.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_10)
+		gui.8130Entry.ddl11.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_11)
+		gui.8130Entry.txt12a.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12A)
+		gui.8130Entry.txt12b.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12B)
+		gui.8130Entry.txt12c.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12C)
+		gui.8130Entry.cbo12d.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12D)
+		gui.8130Entry.cbo12e.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12E)
+		gui.8130Entry.cbo12f.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12F)
+		gui.8130Entry.cbo12g.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12G)
+		gui.8130Entry.txt12h.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12H)
+		gui.8130Entry.txt12i.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12I)
+		gui.8130Entry.txt12j.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_12J)
+		f.Intrinsic.Control.If(v.ODBC.conx!FORM.FieldValTrim!FIELD_12CN,<>,"")
+			gui.8130Entry.chkCorrection.Value(1)
+			f.Intrinsic.Control.CallSub(chkCorrection_LostFocus)
+			f.Intrinsic.String.Split(v.ODBC.conx!FORM.FieldValTrim!FIELD_12CN,",",v.Local.sSplit)
+			gui.8130Entry.txt12CN1.Text(v.Local.sSplit(0))
+			gui.8130Entry.dtp12CN.Value(v.Local.sSplit(1))
+		f.Intrinsic.Control.EndIf
+		gui.8130Entry.chk13a1.Value(v.ODBC.conx!FORM.FieldVal!FIELD_13A1)
+		gui.8130Entry.chk13a2.Value(v.ODBC.conx!FORM.FieldVal!FIELD_13A2)
+		gui.8130Entry.txt13b.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_13B)
+		gui.8130Entry.txt13c.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_13C)
+		gui.8130Entry.txt13d.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_13D)
+		gui.8130Entry.dtp13e.Value(v.ODBC.conx!FORM.FieldVal!FIELD_13E)
+		gui.8130Entry.chk14a1.Value(v.ODBC.conx!FORM.FieldVal!FIELD_14A1)
+		gui.8130Entry.chk14a2.Value(v.ODBC.conx!FORM.FieldVal!FIELD_14A2)
+		gui.8130Entry.txt14b.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_14B)
+		gui.8130Entry.txt14c.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_14C)
+		gui.8130Entry.txt14d.Text(v.ODBC.conx!FORM.FieldValTrim!FIELD_14D)
+		gui.8130Entry.dtp14e.Value(v.ODBC.conx!FORM.FieldVal!FIELD_14E)
+		
+		f.Intrinsic.Control.UnBlockEvents
+		
+	f.Intrinsic.Control.EndIf
+	
+	f.ODBC.conx!FORM.Close
+	
+	f.ODBC.Connection!conx.Close
+	
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.LoadData.End
+
+Program.Sub.cmdFormBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sTitle.Declare
+v.Local.iWidth.Declare
+v.Local.sRet.Declare
+v.Local.sTrim.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.String.Split("FORM*!*JOB*!*PO*!*PART*!*DESCRIPTION*!*SERIAL*!*STATUS","*!*",v.Local.sTitle)
+f.Intrinsic.String.Split("800*!*800*!*800*!*800*!*1000*!*1000*!*1000","*!*",v.Local.iWidth)
+
+'f.Intrinsic.String.Build("select * from GCG_6455_8130_HIST",v.Screen.tIDMaintain!txtPart.Value,v.Local.sSQL)
+f.Intrinsic.Control.If(v.Screen.8130Entry!txt8.Text,=,"")
+	v.Local.sSQL.Set("select FORM_ID, FIELD_03, FIELD_05, FIELD_08, FIELD_07, FIELD_10, FIELD_11 from GCG_6455_8130_HIST")
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("select FORM_ID, FIELD_03, FIELD_05, FIELD_08, FIELD_07, FIELD_10, FIELD_11 from GCG_6455_8130_HIST where FIELD_08 = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.Browser("8130 Form Browser","conx",v.Local.sSQL,v.Local.sTitle,v.Local.iWidth,v.Local.sRet)
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+	
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	f.Intrinsic.String.RTrim(v.Local.sRet(0),v.Local.sTrim)
+	gui.8130Entry.txtFormID.Text(v.Local.sTrim)
+	f.Intrinsic.Control.CallSub(txtFormID_LostFocus)
+
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.CallSub(LoadData)
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdFormBrowse_Click.End
+
+Program.Sub.cmdNewID_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sRet.Declare
+v.Local.sIDPad.Declare
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txtCustID.Text,<>,"",and,v.Screen.8130Entry!txt8.Text,<>,"")
+	f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormID.Text,=,"")
+	
+		f.ODBC.Connection!conx.OpenCompanyConnection
+		f.ODBC.Connection!conx.ExecuteandReturn("select isnull(max(cast(FORM_NO as INT)),0)+1 as ID_NUM from GCG_6455_8130_HIST",v.Local.sRet)
+		f.Intrinsic.String.LPad(v.Local.sRet,"0",6,v.Local.sIDPad)
+		gui.8130Entry.txtFormNo.Text(v.Local.sIDPad)
+		f.ODBC.Connection!conx.Close
+		
+'		f.Intrinsic.Control.CallSub(cmdSave_Click)
+		
+	f.Intrinsic.Control.EndIf
+	
+f.Intrinsic.Control.Else
+	f.Intrinsic.UI.Msgbox("Please enter a Customer and Part to generate an Tracking Number.","ERROR")
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdNewID_Click.End
+
+Program.Sub.cmdJobBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sRet.Declare
+v.Local.sJob.Declare
+
+f.Intrinsic.UI.Browser(1000,"",v.Local.sRet)
+
+f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+	f.Intrinsic.Control.CallSub(cmdClear_Click)
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	f.Intrinsic.Control.If(v.Local.sRet(1),<>,"   ")
+		f.Intrinsic.String.Build("{0}-{1}",v.Local.sRet(0),v.Local.sRet(1),v.Local.sJob)
+	f.Intrinsic.Control.Else
+		v.Local.sJob.Set(v.Local.sRet(0))
+	f.Intrinsic.Control.EndIf
+	gui.8130Entry.txt3.Text(v.Local.sJob)
+	f.Intrinsic.Control.CallSub(txt3_LostFocus)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdJobBrowse_Click.End
+
+Program.Sub.cmdPartBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sRet.Declare
+v.Local.sPart.Declare
+
+f.Intrinsic.UI.Browser(100,"",v.Local.sRet)
+
+f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+	f.Intrinsic.Control.CallSub(cmdClear_Click)
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+'	f.Intrinsic.String.Build("{0}-{1}",v.Local.sRet(0),v.Local.sRet(1),v.Local.sJob)
+	gui.8130Entry.txt8.Text(v.Local.sRet(0))
+	gui.8130Entry.txt7.Text(v.Local.sRet(3))
+	f.Intrinsic.Control.CallSub(txt8_LostFocus)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdPartBrowse_Click.End
+
+Program.Sub.cmdSerialBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sTitle.Declare
+v.Local.iWidth.Declare
+v.Local.sRet.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txt8.Text,<>,"")
+
+	f.Intrinsic.String.Split("LOC*!*LOT*!*BIN*!*HEAT*!*SERIAL","*!*",v.Local.sTitle)
+	f.Intrinsic.String.Split("400*!*400*!*600*!*1000*!*1000","*!*",v.Local.iWidth)
+
+	f.Intrinsic.String.Build("select LOCATION, LOT, BIN, HEAT, SERIAL_NUMBER from V_ITEM_MASTER where rtrim(PART) = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+	F.Intrinsic.UI.Browser("Serial Browser","conx",v.Local.sSQL,v.Local.sTitle,v.Local.iWidth,v.Local.sRet)
+	
+	f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+		
+		f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+		gui.8130Entry.txt10.Text(v.Local.sRet(4))
+	
+	f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.EndIf
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSerialBrowse_Click.End
+
+Program.Sub.SetView.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+gui.8130Entry..Enabled(false)
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.SetView.End
+
+Program.Sub.cmdSign13b_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sMSG.Declare
+v.Local.sRet.Declare
+
+'f.Intrinsic.String.Build("I, {0}, am hereby certifying that all work contained within the information {1}listed on this form has been completed and inspected per the required specifications.{1}{2}I also provide my consent to signing this form electronically and{3}recognize that I have the option to sign the physical form if requested.",v.Global.sSign,v.Ambient.NewLine,v.Ambient.NewLine,v.Ambient.NewLine,v.Ambient.NewLine,v.Local.sMSG)
+
+'f.Intrinsic.UI.Msgbox(v.Local.sMSG,"ACKNOWLEDGEMENT",4,v.Local.sRet)
+
+'f.Intrinsic.Control.If(v.Local.sRET,=,v.Ambient.MsgBoxYes)
+
+'	gui.8130Entry.txt13b.Text(v.Global.sSign)
+	gui.8130Entry.txt13d.Text(v.Global.sSign)
+	gui.8130Entry.dtp13e.Value(v.Ambient.Date)
+	v.Global.sTime.Set(v.Ambient.Time)
+	f.Intrinsic.String.Build("{0}.{1}",v.System.ComputerName,v.System.UserDomain,v.Global.sLoc)
+	
+'f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSign13b_Click.End
+
+Program.Sub.cmdSign14b_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sMSG.Declare
+v.Local.sRet.Declare
+v.Local.sLoc.Declare
+
+'f.Intrinsic.String.Build("I, {0}, am hereby certifying that all work contained within the information {1}listed on this form has been completed and inspected per the required specifications.{1}{2}I also provide my consent to signing this form electronically and{3}recognize that I have the option to sign the physical form if requested.",v.Global.sSign,v.Ambient.NewLine,v.Ambient.NewLine,v.Ambient.NewLine,v.Ambient.NewLine,v.Local.sMSG)
+
+'f.Intrinsic.UI.Msgbox(v.Local.sMSG,"ACKNOWLEDGEMENT",4,v.Local.sRet)
+
+'f.Intrinsic.Control.If(v.Local.sRET,=,v.Ambient.MsgBoxYes)
+
+'	gui.8130Entry.txt14b.Text(v.Global.sSign)
+	gui.8130Entry.txt14d.Text(v.Global.sSign)
+	gui.8130Entry.dtp14e.Value(v.Ambient.Date)
+	v.Global.sTime.Set(v.Ambient.Time)
+	f.Intrinsic.String.Build("{0}.{1}",v.System.ComputerName,v.System.UserDomain,v.Global.sLoc)
+	
+'f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSign14b_Click.End
+
+Program.Sub.cmdSave_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+v.Local.sNumPad.Declare
+v.Local.sID.Declare
+v.Local.sDate.Declare
+v.Local.s12CN.Declare
+v.Local.s13e.Declare
+v.Local.s14e.Declare
+v.Local.b13a1.Declare
+v.Local.b13a2.Declare
+v.Local.b14a1.Declare
+v.Local.b14a2.Declare
+
+f.Intrinsic.Control.CallSub(cmdNewID_Click)
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormNo.Text,<>,"")
+
+	f.Intrinsic.String.Format(v.Ambient.Date,"YYYY-MM-DD",v.Local.sDate)
+	
+	f.ODBC.Connection!conx.OpenCompanyConnection
+	
+	f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormID.Text,=,"")
+		f.Intrinsic.String.Build("select isnull(max(cast(right(FORM_ID,4) as INT)),0)+1 as ID_NUM from GCG_6455_8130_HIST where CUSTOMER = '{0}' and FIELD_08 = '{1}'",v.Screen.8130Entry!txtCustID.Text,v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+		f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sRet)
+		f.Intrinsic.String.LPad(v.Local.sRet,"0",4,v.Local.sNumPad)
+		f.Intrinsic.String.Build("{0}{1}{2}",v.Screen.8130Entry!txtCustID.Text,v.Screen.8130Entry!txt8.Text,v.Local.sNumPad,v.Local.sID)
+		gui.8130Entry.txtFormID.Text(v.Local.sID)
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.String.Build("select * from GCG_6455_8130_HIST where FORM_NO = '{0}'",v.Screen.8130Entry!txtFormNo.Text,v.Local.sSQL)
+	f.ODBC.Connection!conx.OpenLocalRecordsetRW("8130",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.ODBC.conx!8130.EOF,=,true)
+		f.ODBC.conx!8130.AddNew
+		f.ODBC.conx!8130.Set!FORM_ID(v.Screen.8130Entry!txtFormID.Text)
+		f.ODBC.conx!8130.Set!FORM_NO(v.Screen.8130Entry!txtFormNo.Text)
+		f.ODBC.conx!8130.Set!CUSTOMER(v.Screen.8130Entry!txtCustID.Text)
+		f.ODBC.conx!8130.Set!DATE_SUBMIT(v.Local.sDate)
+		f.ODBC.conx!8130.Set!USER_SUBMIT(v.Caller.User)
+	f.Intrinsic.Control.EndIf
+		f.ODBC.conx!8130.Set!FIELD_01(v.Screen.8130Entry!txt1.Text)
+		f.ODBC.conx!8130.Set!FIELD_02(v.Screen.8130Entry!txt2.Text)
+		f.ODBC.conx!8130.Set!FIELD_03(v.Screen.8130Entry!txt3.Text)
+		f.ODBC.conx!8130.Set!FIELD_04A(v.Screen.8130Entry!txt4a.Text)
+		f.ODBC.conx!8130.Set!FIELD_04B(v.Screen.8130Entry!txt4b.Text)
+		f.ODBC.conx!8130.Set!FIELD_05(v.Screen.8130Entry!txt5.Text)
+		f.ODBC.conx!8130.Set!FIELD_06(v.Screen.8130Entry!txt6.Text)
+		f.ODBC.conx!8130.Set!FIELD_07(v.Screen.8130Entry!txt7.Text)
+		f.ODBC.conx!8130.Set!FIELD_08(v.Screen.8130Entry!txt8.Text)
+		f.ODBC.conx!8130.Set!FIELD_09(v.Screen.8130Entry!txt9.Text)
+		f.ODBC.conx!8130.Set!FIELD_10(v.Screen.8130Entry!txt10.Text)
+		f.ODBC.conx!8130.Set!FIELD_11(v.Screen.8130Entry!ddl11.Text)
+		f.Intrinsic.Control.If(v.Screen.8130Entry!txt12a.Text,<>,"")
+			f.ODBC.conx!8130.Set!FIELD_12A(v.Screen.8130Entry!txt12a.Text)
+		f.Intrinsic.Control.Else
+			f.ODBC.conx!8130.Set!FIELD_12A(v.Ambient.Null)
+		f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.If(v.Screen.8130Entry!txt12b.Text,<>,"")
+			f.ODBC.conx!8130.Set!FIELD_12B(v.Screen.8130Entry!txt12b.Text)
+		f.Intrinsic.Control.Else
+			f.ODBC.conx!8130.Set!FIELD_12B(v.Ambient.Null)
+		f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.If(v.Screen.8130Entry!txt12c.Text,<>,"")
+			f.ODBC.conx!8130.Set!FIELD_12C(v.Screen.8130Entry!txt12c.Text)
+		f.Intrinsic.Control.Else
+			f.ODBC.conx!8130.Set!FIELD_12C(v.Ambient.Null)
+		f.Intrinsic.Control.EndIf
+		f.ODBC.conx!8130.Set!FIELD_12D(v.Screen.8130Entry!cbo12d.Text)
+		f.ODBC.conx!8130.Set!FIELD_12E(v.Screen.8130Entry!cbo12e.Text)
+		f.ODBC.conx!8130.Set!FIELD_12F(v.Screen.8130Entry!cbo12f.Text)
+		f.ODBC.conx!8130.Set!FIELD_12G(v.Screen.8130Entry!cbo12g.Text)
+		f.ODBC.conx!8130.Set!FIELD_12H(v.Screen.8130Entry!txt12h.Text)
+		f.ODBC.conx!8130.Set!FIELD_12I(v.Screen.8130Entry!txt12i.Text)
+		f.ODBC.conx!8130.Set!FIELD_12J(v.Screen.8130Entry!txt12j.Text)
+		v.Local.b13a1.Set(v.Screen.8130Entry!chk13a1.Value)
+		f.ODBC.conx!8130.Set!FIELD_13A1(v.Local.b13a1)
+		v.Local.b13a2.Set(v.Screen.8130Entry!chk13a2.Value)
+		f.ODBC.conx!8130.Set!FIELD_13A2(v.Local.b13a2)
+		f.ODBC.conx!8130.Set!FIELD_13B(v.Screen.8130Entry!txt13b.Text)
+		f.ODBC.conx!8130.Set!FIELD_13C(v.Screen.8130Entry!txt13c.Text)
+		f.ODBC.conx!8130.Set!FIELD_13D(v.Screen.8130Entry!txt13d.Text)
+		f.Intrinsic.String.Format(v.Screen.8130Entry!dtp13e.Value,"YYYY-MM-DD",v.Local.s13e)
+		f.ODBC.conx!8130.Set!FIELD_13E(v.Local.s13e)
+		v.Local.b14a1.Set(v.Screen.8130Entry!chk14a1.Value)
+		f.ODBC.conx!8130.Set!FIELD_14A1(v.Local.b14a1)
+		v.Local.b14a2.Set(v.Screen.8130Entry!chk14a2.Value)
+		f.ODBC.conx!8130.Set!FIELD_14A2(v.Local.b14a2)
+		f.ODBC.conx!8130.Set!FIELD_14B(v.Screen.8130Entry!txt14b.Text)
+		f.ODBC.conx!8130.Set!FIELD_14C(v.Screen.8130Entry!txt14c.Text)
+		f.ODBC.conx!8130.Set!FIELD_14D(v.Screen.8130Entry!txt14d.Text)
+		f.Intrinsic.String.Format(v.Screen.8130Entry!dtp14e.Value,"YYYY-MM-DD",v.Local.s14e)
+		f.ODBC.conx!8130.Set!FIELD_14E(v.Local.s14e)
+		f.ODBC.conx!8130.Set!DATE_UPDATE(v.Local.sDate)
+		f.ODBC.conx!8130.Set!USER_UPDATE(v.Caller.User)
+		f.Intrinsic.Control.If(v.Global.sTime,<>,"")
+			f.ODBC.conx!8130.Set!SIGN_TIME(v.Global.sTime)
+			f.ODBC.conx!8130.Set!SIGN_LOC(v.Global.sLoc)
+		f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.If(v.Screen.8130Entry!chkCorrection.Value,=,1)
+			f.Intrinsic.String.Build("{0},{1}",v.Screen.8130Entry!txt12CN1.Text,v.Screen.8130Entry!dtp12CN.Value,v.Local.s12CN)
+			f.ODBC.conx!8130.Set!FIELD_12CN(v.Local.s12CN)
+		f.Intrinsic.Control.EndIf
+		f.ODBC.conx!8130.Update
+		f.ODBC.conx!8130.Close
+	f.ODBC.Connection!conx.Close
+	
+	f.Intrinsic.UI.Msgbox("The form has been saved!","SUCCESS!")
+
+f.Intrinsic.Control.Else
+
+	f.Intrinsic.UI.Msgbox("Please aquire a New ID before saving the form.","ERROR")
+
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.cmdCustBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sRet.Declare
+v.Local.sJob.Declare
+
+f.Intrinsic.UI.Browser(205,"",v.Local.sRet)
+
+f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	gui.8130Entry.txtCustID.Text(v.Local.sRet(0))
+	f.Intrinsic.Control.CallSub(txtCustID_LostFocus)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdCustBrowse_Click.End
+
+Program.Sub.cmdPOBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sTitle.Declare
+v.Local.iWidth.Declare
+v.Local.sRet.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.String.Split("PO*!*FORM NUM*!*JOB*!*PART*!*DESCRIPTION*!*SERIAL*!*STATUS","*!*",v.Local.sTitle)
+f.Intrinsic.String.Split("800*!*800*!*800*!*800*!*1000*!*1000*!*1000","*!*",v.Local.iWidth)
+
+'f.Intrinsic.String.Build("select * from GCG_6455_8130_HIST",v.Screen.tIDMaintain!txtPart.Value,v.Local.sSQL)
+f.Intrinsic.Control.If(v.Screen.8130Entry!txt8.Text,=,"")
+	v.Local.sSQL.Set("select FIELD_05, FORM_NO, FIELD_03, FIELD_08, FIELD_07, FIELD_10, FIELD_11 from GCG_6455_8130_HIST")
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("select FIELD_05, FORM_NO, FIELD_03, FIELD_08, FIELD_07, FIELD_10, FIELD_11 from GCG_6455_8130_HIST where FIELD_08 = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.Browser("8130 Form Browser","conx",v.Local.sSQL,v.Local.sTitle,v.Local.iWidth,v.Local.sRet)
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+	
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	gui.8130Entry.txtFormNo.Text(v.Local.sRet(1))
+	gui.8130Entry.txt5.Text(v.Local.sRet(0))
+	gui.8130Entry.txt8.Text(v.Local.sRet(2))
+	f.Intrinsic.Control.CallSub(txtFormNo_LostFocus)
+
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.CallSub(LoadData)
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdPOBrowse_Click.End
+
+Program.Sub.txtFormNo_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sPad.Declare
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormNo.Text,<>,"")
+	f.Intrinsic.String.LPad(v.Screen.8130Entry!txtFormNo.Text,"0",6,v.Local.sPad)
+	gui.8130Entry.txtFormNo.Text(v.Local.sPad)
+	f.Intrinsic.Control.If(v.Screen.8130Entry!txt8.Text,=,"")
+		v.Global.sHookVar.Set("")
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.CallSub(LoadData)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.txtFormNo_LostFocus.End
+
+Program.Sub.txtCustID_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sFormID.Declare
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+
+f.ODBC.Connection!cony.OpenCompanyConnection
+
+f.Intrinsic.String.Build("Select NAME_CUSTOMER from V_CUSTOMER_MASTER where CUSTOMER = '{0}'",v.Screen.8130Entry!txtCustID.Text,v.Local.sSQL)
+f.ODBC.Connection!cony.ExecuteandReturn(v.Local.sSQL,v.Local.sRet)
+gui.8130Entry.txtCustName.Text(v.Local.sRet)
+
+f.Intrinsic.String.Build("{0}{1}0000",v.Screen.8130Entry!txtCustID.Text,v.Screen.8130Entry!txt8.Text,v.Local.sFormID)
+f.Intrinsic.String.Build("select * from GCG_6455_8130_FIXED where FORM_ID = '{0}'",v.Local.sFormID,v.Local.sSQL)
+f.ODBC.Connection!cony.OpenLocalRecordsetRO("FIXED",v.Local.sSQL)
+
+f.Intrinsic.Control.If(v.ODBC.cony!FIXED.EOF,=,true)
+	f.ODBC.cony!FIXED.Close
+	f.Intrinsic.String.Build("select * from GCG_6455_8130_FIXED where CUSTOMER = '{0}'",v.Screen.8130Entry!txtCustID.Text,v.Local.sSQL)
+	f.ODBC.Connection!cony.OpenLocalRecordsetRO("FIXED",v.Local.sSQL)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.ODBC.cony!FIXED.EOF,=,true)
+	f.ODBC.cony!FIXED.Close
+	f.ODBC.Connection!cony.OpenLocalRecordsetRO("FIXED","select * from GCG_6455_8130_FIXED where CUSTOMER = 'STNDRD'")
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.ODBC.cony!FIXED.EOF,=,false)
+
+	f.Intrinsic.Control.BlockEvents
+	
+'	gui.8130Entry.txtCustID.Text(v.ODBC.cony!FIXED.FieldVal!CUSTOMER)
+'	gui.8130Entry.txtFormID.Text(v.ODBC.cony!FIXED.FieldVal!FORM_ID)
+	gui.8130Entry.txt1.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_01)
+	gui.8130Entry.txt2.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_02)
+	gui.8130Entry.txt4a.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_04A)
+	gui.8130Entry.txt4b.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_04B)
+'	gui.8130Entry.txt5.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_05)
+	gui.8130Entry.txt6.Text(v.ODBC.cony!FIXED.FieldVal!FIELD_06)
+'	gui.8130Entry.txt7.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_07)
+'	gui.8130Entry.txt8.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_08)
+'	gui.8130Entry.txt9.Text(v.ODBC.cony!FIXED.FieldVal!FIELD_09)
+'	gui.8130Entry.txt10.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_10)
+	gui.8130Entry.ddl11.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_11)
+	gui.8130Entry.txt12a.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12A)
+	gui.8130Entry.txt12b.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12B)
+	gui.8130Entry.txt12c.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12C)
+	gui.8130Entry.cbo12d.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12D)
+	gui.8130Entry.cbo12e.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12E)
+	gui.8130Entry.cbo12f.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12F)
+	gui.8130Entry.cbo12g.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12G)
+	gui.8130Entry.txt12h.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12H)
+	gui.8130Entry.txt12i.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12I)
+	gui.8130Entry.txt12j.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_12J)
+	gui.8130Entry.chk13a1.Value(v.ODBC.cony!FIXED.FieldVal!FIELD_13A1)
+	gui.8130Entry.chk13a2.Value(v.ODBC.cony!FIXED.FieldVal!FIELD_13A2)
+	gui.8130Entry.txt13b.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_13B)
+	gui.8130Entry.txt13c.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_13C)
+	gui.8130Entry.txt13d.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_13D)
+	gui.8130Entry.dtp13e.Value(v.ODBC.cony!FIXED.FieldVal!FIELD_13E)
+	gui.8130Entry.chk14a1.Value(v.ODBC.cony!FIXED.FieldVal!FIELD_14A1)
+	gui.8130Entry.chk14a2.Value(v.ODBC.cony!FIXED.FieldVal!FIELD_14A2)
+	gui.8130Entry.txt14b.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_14B)
+	gui.8130Entry.txt14c.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_14C)
+	gui.8130Entry.txt14d.Text(v.ODBC.cony!FIXED.FieldValTrim!FIELD_14D)
+	gui.8130Entry.dtp14e.Value(v.ODBC.cony!FIXED.FieldVal!FIELD_14E)
+	
+	f.Intrinsic.Control.UnBlockEvents
+	
+	f.Intrinsic.Control.If(v.ODBC.cony!FIXED.FieldVal!DISABLE_13,=,true)
+		gui.8130Entry.chk13a1.Enabled(false)
+		gui.8130Entry.chk13a2.Enabled(false)
+		gui.8130Entry.txt13b.Enabled(false)
+		gui.8130Entry.txt13c.Enabled(false)
+		gui.8130Entry.txt13d.Enabled(false)
+		gui.8130Entry.dtp13e.Enabled(false)
+		gui.8130Entry.cmdSign13b.Enabled(false)
+	f.Intrinsic.Control.ElseIf(v.ODBC.cony!FIXED.FieldVal!DISABLE_14,=,true)
+		gui.8130Entry.chk14a1.Enabled(false)
+		gui.8130Entry.chk14a2.Enabled(false)
+		gui.8130Entry.txt14b.Enabled(false)
+		gui.8130Entry.txt14c.Enabled(false)
+		gui.8130Entry.txt14d.Enabled(false)
+		gui.8130Entry.dtp14e.Enabled(false)
+		gui.8130Entry.cmdSign14b.Enabled(false)
+	f.Intrinsic.Control.Else
+		gui.8130Entry.chk13a1.Enabled(true)
+		gui.8130Entry.chk13a2.Enabled(true)
+		gui.8130Entry.txt13b.Enabled(true)
+		gui.8130Entry.txt13c.Enabled(true)
+		gui.8130Entry.txt13d.Enabled(true)
+		gui.8130Entry.dtp13e.Enabled(true)
+		gui.8130Entry.cmdSign13b.Enabled(true)
+		gui.8130Entry.chk14a1.Enabled(true)
+		gui.8130Entry.chk14a2.Enabled(true)
+		gui.8130Entry.txt14b.Enabled(true)
+		gui.8130Entry.txt14c.Enabled(true)
+		gui.8130Entry.txt14d.Enabled(true)
+		gui.8130Entry.dtp14e.Enabled(true)
+		gui.8130Entry.cmdSign14b.Enabled(true)
+	f.Intrinsic.Control.EndIf
+	
+f.Intrinsic.Control.EndIf
+
+f.ODBC.cony!FIXED.Close
+
+f.ODBC.Connection!cony.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.txtCustID_LostFocus.End
+
+Program.Sub.txt3_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.iLen.Declare
+v.Local.sRet.Declare
+v.Local.sJob.Declare
+v.Local.sSuffix.Declare
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormID.Text,=,"")
+
+f.Intrinsic.String.Len(v.Screen.8130Entry!txt3.Text,v.Local.iLen)
+
+f.Intrinsic.Control.If(v.Local.iLen,>,6)
+	f.Intrinsic.String.Left(v.Screen.8130Entry!txt3.Text,6,v.Local.sJob)
+	f.Intrinsic.String.Right(v.Screen.8130Entry!txt3.Text,3,v.Local.sSuffix)
+f.Intrinsic.Control.Else
+	v.Local.sJob.Set(v.Screen.8130Entry!txt3.Text)
+	v.Local.sSuffix.Set("")
+f.Intrinsic.Control.EndIf
+
+f.ODBC.Connection!conz.OpenCompanyConnection
+
+f.Intrinsic.String.Build("select PART, DESCRIPTION, QTY_ORDER, CUSTOMER, CUSTOMER_PO, CODE_SORT from V_JOB_HEADER where JOB = '{0}' and SUFFIX = '{1}'",v.Local.sJob,v.Local.sSuffix,v.Local.sSQL)
+f.ODBC.Connection!conz.ExecuteandReturn(v.Local.sSQL,v.Local.sRet)
+
+f.ODBC.Connection!conz.Close
+
+f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+
+gui.8130Entry.txt5.Text(v.Local.sRet(4))
+gui.8130Entry.txt8.Text(v.Local.sRet(0))
+gui.8130Entry.txt7.Text(v.Local.sRet(1))
+gui.8130Entry.txt9.Text(v.Local.sRet(2))
+gui.8130Entry.txt10.Text(v.Local.sRet(5))
+gui.8130Entry.txtCustID.Text(v.Local.sRet(3))
+f.Intrinsic.Control.CallSub(txtCustID_LostFocus)
+
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.txt3_LostFocus.End
+
+Program.Sub.txt5_LostFocus.Start
+Program.Sub.txt5_LostFocus.End
+
+Program.Sub.txt8_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.String.Build("Select rtrim(DESCRIPTION) as DESCRIPTION from V_INVENTORY_MSTR where PART = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sRet)
+gui.8130Entry.txt7.Text(v.Local.sRet)
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.txt8_LostFocus.End
+
+Program.Sub.HookCheck.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sJOBSUF.Declare
+v.Local.sJob.Declare
+v.Local.sSuffix.Declare
+v.Local.sSQL.Declare
+v.Local.sRet.Declare
+v.Local.sBDF.Declare
+v.Local.fBDFRC.Declare
+v.Local.fLen.Declare
+v.Local.i.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.Control.SelectCase(v.Caller.Hook)
+
+'GUI SCRIPT 3
+f.Intrinsic.Control.Case("15870")
+
+	f.Intrinsic.Control.If(v.Passed.009991,<>,"")
+		f.Intrinsic.String.Build("{0}-{1}",v.Passed.009990,v.Passed.009991,v.Local.sJOBSUF)
+	f.Intrinsic.Control.Else
+		v.Local.sJOBSUF.Set(v.Passed.009990)
+	f.Intrinsic.Control.EndIf
+	
+	gui.8130Entry.txt3.Text(v.Local.sJOBSUF)
+	f.Intrinsic.Control.CallSub(txt3_LostFocus)
+	
+	f.Intrinsic.String.Build("FIELD_03 = '{0}' and FIELD_08 = '{1}'",v.Screen.8130Entry!txt3.Text,v.Screen.8130Entry!txt8.Text,v.Global.sHookVar)
+		
+'SFDC SCRIPT 3
+f.Intrinsic.Control.Case("50612")
+
+	f.Intrinsic.BDF.Load("UpdateJobsView-gvWOOperations-bdf","UpdateJobsView-gvWOOperations-bdf")
+	f.Intrinsic.BDF.ReadRowCount("UpdateJobsView-gvWOOperations-bdf",v.Local.fBDFRC)
+	f.Intrinsic.Math.Sub(v.Local.fBDFRC,1,v.Local.fBDFRC)
+	
+	f.Intrinsic.Control.For(v.Local.i,0,v.Local.fBDFRC,1)
+		f.Intrinsic.BDF.ReadRow("UpdateJobsView-gvWOOperations-bdf",v.Local.i,v.Local.sBDF)
+		f.Intrinsic.String.Split(v.Local.sBDF,"|~|",v.Local.sBDF)
+	f.Intrinsic.Control.Next(v.Local.i)
+	
+	f.Intrinsic.String.Len(v.Local.sBDF(0),v.Local.fLen)
+	
+	f.Intrinsic.Control.If(v.Local.fLen,>,6)
+		f.Intrinsic.String.Left(v.Local.sBDF(0),6,v.Local.sJob)
+		f.Intrinsic.String.Right(v.Local.sBDF(0),3,v.Local.sSuffix)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.String.Left(v.Local.sBDF(0),6,v.Local.sJob)
+		v.Local.sSuffix.Set("")
+	f.Intrinsic.Control.EndIf
+	
+	gui.8130Entry.txt3.Text(v.Local.sBDF(0))
+	f.Intrinsic.Control.CallSub(txt3_LostFocus)
+	
+	f.Intrinsic.String.Build("FIELD_03 = '{0}' and FIELD_08 = '{1}'",v.Screen.8130Entry!txt3.Text,v.Screen.8130Entry!txt8.Text,v.Global.sHookVar)
+
+'WO ENTRY SCRIPT 2
+f.Intrinsic.Control.Case("16680")
+
+	f.Intrinsic.Control.If(v.Passed.000004,<>,"")
+		f.Intrinsic.String.Build("{0}-{1}",v.Passed.000003,v.Passed.000004,v.Local.sJOBSUF)
+	f.Intrinsic.Control.Else
+		v.Local.sJOBSUF.Set(v.Passed.000003)
+	f.Intrinsic.Control.EndIf
+	
+	gui.8130Entry.txtCustID.Text(v.Passed.000018)
+	gui.8130Entry.txt8.Text(v.Passed.000012)
+	f.Intrinsic.Control.CallSub(txtCustID_LostFocus)
+	gui.8130Entry.txt5.Text(v.Passed.000010)
+	gui.8130Entry.txt3.Text(v.Local.sJOBSUF)
+	gui.8130Entry.txt7.Text(v.Passed.000016)
+	gui.8130Entry.txt9.Text(v.Passed.000043)
+	gui.8130Entry.txt10.Text(v.Passed.000028)
+	
+	f.Intrinsic.String.Build("FIELD_03 = '{0}' and FIELD_08 = '{1}'",v.Local.sJOBSUF,v.Passed.000012,v.Global.sHookVar)
+	
+'WO VIEW SCRIPT 2
+f.Intrinsic.Control.Case("13630")
+
+	f.Intrinsic.String.Left(v.Passed.000001,6,v.Local.sJob)
+	f.Intrinsic.String.Right(v.Passed.000001,3,v.Local.sSuffix)
+	
+	f.Intrinsic.Control.If(v.Local.sSuffix,<>,"   ")
+		f.Intrinsic.String.Build("{0}-{1}",v.Local.sJob,v.Local.sSuffix,v.Local.sJOBSUF)
+	f.Intrinsic.Control.Else
+		v.Local.sJOBSUF.Set(v.Local.sJob)
+	f.Intrinsic.Control.EndIf
+	
+	gui.8130Entry.txtCustID.Text(v.Passed.000025)
+	f.Intrinsic.Control.CallSub(txtCustID_LostFocus)
+	gui.8130Entry.txt5.Text(v.Passed.000028)
+	gui.8130Entry.txt3.Text(v.Local.sJOBSUF)
+	gui.8130Entry.txt7.Text(v.Passed.000023)
+	gui.8130Entry.txt8.Text(v.Passed.000019)
+	gui.8130Entry.txt9.Text(v.Passed.000036)
+	gui.8130Entry.txt10.Text(v.Passed.000032)
+	
+	f.Intrinsic.String.Build("FIELD_03 = '{0}' and FIELD_08 = '{1}'",v.Local.sJOBSUF,v.Passed.000019,v.Global.sHookVar)
+	
+'PART MASTER SCRIPT 3
+f.Intrinsic.Control.Case("10230")
+
+	gui.8130Entry.txt7.Text(v.Passed.000012)
+	gui.8130Entry.txt8.Text(v.Passed.000007)
+
+f.Intrinsic.Control.EndSelect
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.HookCheck.End
+
+Program.Sub.SecurityCheck.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sGSUser.Declare
+v.Local.bSecurity.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.Control.SelectCase(v.Caller.Hook)
+
+'GUI SCRIPT 3
+f.Intrinsic.Control.Case("15870")
+
+	f.Intrinsic.String.Build("select PR_USER_ID from V_EMPLOYEE_MSTR where EMPLOYEE = '{0}'",v.Passed.009993,v.Local.sSQL)
+	f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sGSUser)
+	f.Global.Security.IsInGroup(v.Local.sGSUser,"8130EDIT",v.Caller.CompanyCode,v.Local.bSecurity)
+	v.Global.sSign.Set(v.Passed.009994)
+
+'SFDC SCRIPT 3
+f.Intrinsic.Control.Case("50612")
+
+	f.Intrinsic.String.Build("select PR_USER_ID from V_EMPLOYEE_MSTR where EMPLOYEE = '{0}'",v.Passed.EMPLOYEE,v.Local.sSQL)
+	f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sGSUser)
+	f.Global.Security.IsInGroup(v.Local.sGSUser,"8130EDIT",v.Caller.CompanyCode,v.Local.bSecurity)
+	v.Global.sSign.Set(v.Passed.EMPLOYEENAME)
+
+'WO ENTRY SCRIPT 2
+f.Intrinsic.Control.Case("16680")
+
+	f.Global.Security.IsInGroup(v.Caller.User,"8130EDIT",v.Caller.CompanyCode,v.Local.bSecurity)
+	f.Intrinsic.String.Build("select NAME from V_EMPLOYEE_MSTR where PR_USER_ID = '{0}'",v.Caller.User,v.Local.sSQL)
+	f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sGSUser)
+	v.Global.sSign.Set(v.Local.sGSUser)
+
+'WO VIEW SCRIPT 2
+f.Intrinsic.Control.Case("13630")
+
+	f.Global.Security.IsInGroup(v.Caller.User,"8130EDIT",v.Caller.CompanyCode,v.Local.bSecurity)
+	f.Intrinsic.String.Build("select NAME from V_EMPLOYEE_MSTR where PR_USER_ID = '{0}'",v.Caller.User,v.Local.sSQL)
+	f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sGSUser)
+	v.Global.sSign.Set(v.Local.sGSUser)
+
+'PART MASTER SCRIPT 3
+f.Intrinsic.Control.Case("10230")
+
+	f.Global.Security.IsInGroup(v.Caller.User,"8130EDIT",v.Caller.CompanyCode,v.Local.bSecurity)
+	f.Intrinsic.String.Build("select NAME from V_EMPLOYEE_MSTR where PR_USER_ID = '{0}'",v.Caller.User,v.Local.sSQL)
+	f.ODBC.Connection!conx.ExecuteandReturn(v.Local.sSQL,v.Local.sGSUser)
+	v.Global.sSign.Set(v.Local.sGSUser)
+
+f.Intrinsic.Control.EndSelect
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.If(v.Local.bSecurity,=,false)
+	f.Intrinsic.Control.CallSub(8130Entry_Unload)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.SecurityCheck.End
+
+Program.Sub.cmdClear_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Global.sHookVar.Set("")
+
+f.Intrinsic.Control.BlockEvents
+
+gui.8130Entry.txtCustID.Text("STNDRD")
+gui.8130Entry.txtCustName.Text("")
+gui.8130Entry.txtFormID.Text("")
+gui.8130Entry.txtFormNo.Text("")
+gui.8130Entry.txt1.Text("")
+gui.8130Entry.txt2.Text("")
+gui.8130Entry.txt3.Text("")
+gui.8130Entry.txt4a.Text("")
+gui.8130Entry.txt4b.Text("")
+gui.8130Entry.txt5.Text("")
+gui.8130Entry.txt6.Text("")
+gui.8130Entry.txt7.Text("")
+gui.8130Entry.txt8.Text("")
+gui.8130Entry.txt9.Text("")
+gui.8130Entry.txt10.Text("")
+gui.8130Entry.ddl11.Text("")
+gui.8130Entry.txt12a.Text("")
+gui.8130Entry.txt12b.Text("")
+gui.8130Entry.txt12c.Text("")
+gui.8130Entry.cbo12d.Text("")
+gui.8130Entry.cbo12e.Text("")
+gui.8130Entry.cbo12f.Text("")
+gui.8130Entry.cbo12g.Text("")
+gui.8130Entry.txt12h.Text("")
+gui.8130Entry.txt12i.Text("")
+gui.8130Entry.txt12j.Text("")
+gui.8130Entry.chk13a1.Value(false)
+gui.8130Entry.chk13a2.Value(false)
+gui.8130Entry.txt13b.Text("")
+gui.8130Entry.txt13c.Text("")
+gui.8130Entry.txt13d.Text("")
+gui.8130Entry.dtp13e.Value("1/1/1900")
+gui.8130Entry.chk14a1.Value(false)
+gui.8130Entry.chk14a2.Value(false)
+gui.8130Entry.txt14b.Text("")
+gui.8130Entry.txt14c.Text("")
+gui.8130Entry.txt14d.Text("")
+gui.8130Entry.dtp14e.Value("1/1/1900")
+
+f.Intrinsic.Control.UnBlockEvents
+
+f.Intrinsic.Control.CallSub(LoadData)
+gui.8130Entry.txtCustID.Text("")
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdClear_Click.End
+
+Program.Sub.cmdFormNoBrowse_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+v.Local.sTitle.Declare
+v.Local.iWidth.Declare
+v.Local.sRet.Declare
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.String.Split("FORM NUM*!*JOB*!*PO*!*PART*!*DESCRIPTION*!*SERIAL*!*STATUS","*!*",v.Local.sTitle)
+f.Intrinsic.String.Split("800*!*800*!*800*!*800*!*1000*!*1000*!*1000","*!*",v.Local.iWidth)
+
+'f.Intrinsic.String.Build("select * from GCG_6455_8130_HIST",v.Screen.tIDMaintain!txtPart.Value,v.Local.sSQL)
+f.Intrinsic.Control.If(v.Screen.8130Entry!txt8.Text,=,"")
+	v.Local.sSQL.Set("select FORM_NO, FIELD_03, FIELD_05, FIELD_08, FIELD_07, FIELD_10, FIELD_11 from GCG_6455_8130_HIST")
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("select FORM_NO, FIELD_03, FIELD_05, FIELD_08, FIELD_07, FIELD_10, FIELD_11 from GCG_6455_8130_HIST where FIELD_08 = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.Browser("8130 Form Browser","conx",v.Local.sSQL,v.Local.sTitle,v.Local.iWidth,v.Local.sRet)
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.If(v.Local.sRet,<>,"***CANCEL***")
+	
+	f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+	gui.8130Entry.txtFormNo.Text(v.Local.sRet(0))
+	f.Intrinsic.Control.CallSub(txtFormNo_LostFocus)
+
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.CallSub(LoadData)
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdFormNoBrowse_Click.End
+
+Program.Sub.cmdPrint_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sBI.Declare
+v.Local.sName.Declare
+v.Local.sParam.Declare
+
+f.Global.BI.GetIDFromName("GCG_6455_8130_FORM.rpt",v.Local.sBI)
+v.Local.sName.Set("FORM_NO")
+v.Local.sParam.Set(v.Screen.8130Entry!txtFormNo.Text)
+
+f.Global.BI.PrintReport(v.Local.sBI,0,v.Local.sName,v.Local.sParam,false)
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdPrint_Click.End
+
+Program.Sub.txtFormID_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txtFormID.Text,<>,"")
+	f.Intrinsic.String.Build("FORM_ID = '{0}'",v.Screen.8130Entry!txtFormID.Text,v.Global.sHookVar)
+	f.Intrinsic.Control.CallSub(LoadData)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.txtFormID_LostFocus.End
+
+Program.Sub.cmd12Add_Click.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sManual.Declare
+v.Local.s12a.Declare
+
+f.Intrinsic.String.Build("{0} {1} {2}",v.Screen.8130Entry!cbo12R1.Text,v.Screen.8130Entry!cbo12R2.Text,v.Screen.8130Entry!cbo12R3.Text,v.Local.sManual)
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!txt12a.Text,=,"")
+	gui.8130Entry.txt12a.Text(v.Local.sManual)
+f.Intrinsic.Control.Else
+	f.Intrinsic.String.Build("{0}{1}{2}",v.Screen.8130Entry!txt12a.Text,v.Ambient.NewLine,v.Local.sManual,v.Local.s12a)
+	gui.8130Entry.txt12a.Text(v.Local.s12a)
+f.Intrinsic.Control.EndIf
+
+gui.8130Entry.cbo12R1.Text("")
+gui.8130Entry.cbo12R2.Text("")
+gui.8130Entry.cbo12R3.Text("")
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cmd12Add_Click.End
+
+Program.Sub.LoadList.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+
+gui.8130Entry.ddl11.ClearItems
+gui.8130Entry.cbo12R1.ClearItems
+gui.8130Entry.cbo12d.ClearItems
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Data.Dictionary.CreateFromSQL("List11","conx","Select LIST_ID, rtrim(VALUE_01) as STATUS from GCG_6455_8130_LISTS where FIELD = '11'")
+gui.8130Entry.ddl11.AddItems(Dictionary,"List11")
+f.Data.Dictionary.Close("List11")
+
+f.Intrinsic.String.Build("Select distinct VALUE_01, rtrim(VALUE_01) as STATUS from GCG_6455_8130_LISTS where FIELD = '12a' and PART = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12a","conx",v.Local.sSQL)
+gui.8130Entry.cbo12R1.AddItems(Dictionary,"List12a")
+f.Data.Dictionary.Close("List12a")
+
+f.Intrinsic.String.Build("Select distinct VALUE_01, rtrim(VALUE_01) as STATUS from GCG_6455_8130_LISTS where FIELD = '12d' and PART = '{0}'",v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12d","conx",v.Local.sSQL)
+gui.8130Entry.cbo12d.AddItems(Dictionary,"List12d")
+f.Data.Dictionary.Close("List12d")
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.LoadList.End
+
+Program.Sub.cbo12R1_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+
+gui.8130Entry.cbo12R2.ClearItems
+gui.8130Entry.cbo12R3.ClearItems
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.String.Build("Select distinct VALUE_02, rtrim(VALUE_02) as REV from GCG_6455_8130_LISTS where FIELD = '12a' and VALUE_01 = '{0}' and PART = '{1}'",v.Screen.8130Entry!cbo12R1.Text,v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12R2","conx",v.Local.sSQL)
+gui.8130Entry.cbo12R2.AddItems(Dictionary,"List12R2")
+f.Data.Dictionary.Close("List12R2")
+
+f.Intrinsic.String.Build("Select distinct VALUE_03, rtrim(VALUE_03) as REP from GCG_6455_8130_LISTS where FIELD = '12a' and VALUE_01 = '{0}' and PART = '{1}'",v.Screen.8130Entry!cbo12R1.Text,v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12R3","conx",v.Local.sSQL)
+gui.8130Entry.cbo12R3.AddItems(Dictionary,"List12R3")
+f.Data.Dictionary.Close("List12R3")
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cbo12R1_LostFocus.End
+
+Program.Sub.cbo12d_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.sSQL.Declare
+
+gui.8130Entry.cbo12e.ClearItems
+gui.8130Entry.cbo12f.ClearItems
+gui.8130Entry.cbo12g.ClearItems
+
+f.ODBC.Connection!conx.OpenCompanyConnection
+
+f.Intrinsic.String.Build("Select distinct VALUE_02, rtrim(VALUE_02) as TYPE from GCG_6455_8130_LISTS where FIELD = '12d' and VALUE_01 = '{0}' and PART = '{1}'",v.Screen.8130Entry!cbo12d.Text,v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12e","conx",v.Local.sSQL)
+gui.8130Entry.cbo12e.AddItems(Dictionary,"List12e")
+f.Data.Dictionary.Close("List12e")
+
+f.Intrinsic.String.Build("Select distinct VALUE_03, rtrim(VALUE_03) as REV from GCG_6455_8130_LISTS where FIELD = '12d' and VALUE_01 = '{0}' and PART = '{1}'",v.Screen.8130Entry!cbo12d.Text,v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12f","conx",v.Local.sSQL)
+gui.8130Entry.cbo12f.AddItems(Dictionary,"List12f")
+f.Data.Dictionary.Close("List12f")
+
+f.Intrinsic.String.Build("Select distinct VALUE_04, rtrim(VALUE_04) as REP from GCG_6455_8130_LISTS where FIELD = '12d' and VALUE_01 = '{0}' and PART = '{1}'",v.Screen.8130Entry!cbo12d.Text,v.Screen.8130Entry!txt8.Text,v.Local.sSQL)
+f.Data.Dictionary.CreateFromSQL("List12g","conx",v.Local.sSQL)
+gui.8130Entry.cbo12g.AddItems(Dictionary,"List12g")
+f.Data.Dictionary.Close("List12g")
+
+f.ODBC.Connection!conx.Close
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.cbo12d_LostFocus.End
+
+Program.Sub.PopulateCheck.Start
+v.Local.sScriptbuttons.Declare
+
+f.Intrinsic.Control.SelectCase(v.Caller.Hook)
+
+'GUI UPDATE JOBS POPULATE
+f.Intrinsic.Control.Case("15840")
+
+	Variable.passed.000050.set("8130")
+	f.Intrinsic.Control.End
+	
+'SFDC UPDATE JOBS POPULATE
+f.Intrinsic.Control.Case("50600")
+
+	v.Local.sScriptbuttons.Set(v.Passed.UpdateJobsView-btnScript-3)
+	f.Intrinsic.String.Replace(v.Local.sScriptbuttons,"Script 3","8130",v.Local.sScriptbuttons)
+	v.Passed.UpdateJobsView-btnScript-3.Set(v.Local.sScriptbuttons)
+	v.Passed.UpdateJobsView-Script3-1.Set(v.Local.sScriptbuttons)
+	f.Intrinsic.Control.End
+
+'WO ENTRY POPULATE
+f.Intrinsic.Control.Case("16630")
+	
+	Variable.passed.000092.set("8130")
+	f.Intrinsic.Control.End
+	
+'WO VIEW POPULATE
+f.Intrinsic.Control.Case("13580")
+
+	Variable.passed.000254.set("8130")
+	f.Intrinsic.Control.End
+	
+'PART MASTER POPULATE
+f.Intrinsic.Control.Case("10120")
+
+	Variable.passed.000070.set("8130")
+	f.Intrinsic.Control.End
+	
+f.Intrinsic.Control.Case("14045")
+
+	f.Intrinsic.Control.End
+	
+f.Intrinsic.Control.EndSelect
+Program.Sub.PopulateCheck.End
+
+Program.Sub.chkCorrection_LostFocus.Start
+f.Intrinsic.Control.Try
+V.Local.sError.Declare
+
+v.Local.dDate.Declare
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!dtp13e.Value,<>,"1/1/1900")
+	v.Local.dDate.Set(v.Screen.8130Entry!dtp13e.Value)
+f.Intrinsic.Control.Else
+	v.Local.dDate.Set(v.Screen.8130Entry!dtp14e.Value)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Screen.8130Entry!chkCorrection.Value,=,1)
+	gui.8130Entry.lbl12CN1.Visible(true)
+	gui.8130Entry.lbl12CN2.Visible(true)
+	gui.8130Entry.txt12CN1.Enabled(true)
+	gui.8130Entry.txt12CN1.Visible(true)
+	gui.8130Entry.dtp12CN.Enabled(true)
+	gui.8130Entry.dtp12CN.Visible(true)
+	gui.8130Entry.dtp12CN.Value(v.Local.dDate)
+f.Intrinsic.Control.Else
+	gui.8130Entry.lbl12CN1.Visible(false)
+	gui.8130Entry.lbl12CN2.Visible(false)
+	gui.8130Entry.txt12CN1.Enabled(false)
+	gui.8130Entry.txt12CN1.Visible(false)
+	gui.8130Entry.dtp12CN.Enabled(false)
+	gui.8130Entry.dtp12CN.Visible(false)
+	gui.8130Entry.dtp12CN.Value("1/1/1900")
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	f.Intrinsic.UI.Msgbox(V.Local.sError)
+	f.Intrinsic.Control.End 
+f.Intrinsic.Control.EndTry
+Program.Sub.chkCorrection_LostFocus.End
